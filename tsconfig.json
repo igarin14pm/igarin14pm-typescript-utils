@@ -1,0 +1,34 @@
+// Copyright (c) 2026 Igarin
+// This software is released under the MIT License.
+// https://opensource.org
+
+{
+  "compilerOptions": {
+    "rootDir": "./scripts/src",
+    "outDir": "./scripts/dist",
+
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "types": [],
+    "lib": ["ESNext", "DOM"],
+
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  },
+  "exclude": [
+    "./eslint.config.ts",
+    "./scripts/dist"
+  ]
+}
