@@ -28,6 +28,7 @@
     "skipLibCheck": true,
   },
   "exclude": [
+    "./eslint.config.ts",
     "./scripts/dist"
   ]
 }
