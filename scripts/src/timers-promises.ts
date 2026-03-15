@@ -7,3 +7,11 @@ export function setTimeout(time_ms: number): Promise<number> {
     (resolve) => window.setTimeout(resolve, time_ms)
   );
 }
+
+export async function* setInterval(time_ms: number): AsyncGenerator<number> {
+  let count = 0;
+  while (true) {
+    await setTimeout(time_ms);
+    yield count++;
+  }
+}
