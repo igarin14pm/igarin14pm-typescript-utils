@@ -10,10 +10,10 @@ import * as TimersPromises from '../../src/timers-promises';
 test('`setTimeout()`', async () => {
   const timeout1Started = new Date();
 
-  await TimersPromises.setTimeout(1000);
+  await TimersPromises.setTimeout(100);
   const timeout1Finished = new Date();
 
-  expect(timeout1Finished.getTime()).toBeGreaterThan(timeout1Started.setMilliseconds(timeout1Started.getMilliseconds() + 996));
+  expect(timeout1Finished.getTime()).toBeGreaterThan(timeout1Started.setMilliseconds(timeout1Started.getMilliseconds() + 96));
   expect(timeout1Finished.getTime()).toBeLessThan(timeout1Started.setMilliseconds(timeout1Started.getMilliseconds() + 8));
 
   const timeout2Started = new Date();
