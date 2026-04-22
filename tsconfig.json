@@ -24,7 +24,9 @@
     "skipLibCheck": true,
   },
   "exclude": [
-    "./eslint.config.ts",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "./*.config.ts",
     "./scripts/dist"
   ]
 }
