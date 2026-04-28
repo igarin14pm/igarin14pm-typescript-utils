@@ -4,15 +4,44 @@ TypeScript の自作ユーティリティ関数をまとめたリポジトリで
 
 # ファイル
 
+## scripts/src/html-element-assertion.ts
+
+`document.querySelector()` などで取得した HTML 要素を特定の HTML 要素型に絞り込むアサーション関数。
+
+### 対応する HTML　要素型
+
+- `HTMLElement`
+- `HTMLAnchorElement`
+- `HTMLButtonElement`
+- `HTMLCanvasElement`
+- `HTMLDivElement`
+- `HTMLEmbedElement`
+- `HTMLHeadingElement`
+- `HTMLHRElement`
+- `HTMLImageElement`
+- `HTMLInputElement`
+- `HTMLLabelElement`
+- `HTMLLIElement`
+- `HTMLOListElement`
+- `HTMLParagraphElement`
+- `HTMLPreElement`
+- `HTMLSpanElement`
+- `HTMLTableCellElement`
+- `HTMLTableElement`
+- `HTMLTableRowElement`
+- `HTMLTimeElement`
+- `HTMLUListElement`
+- `HTMLSelectElement`
+
 ## scripts/src/timers-promises.ts
 
-`setTimeout()`/`setInterval()` をブラウザで `async`/`await` を使って呼び出せるように、 `Promise` でラップした関数を定義。
+`window.setTimeout()`/`window.setInterval()` をブラウザで `async`/`await` を使って呼び出せるように、 `Promise` でラップした関数を定義。
 
 # インストール方法
 
-(このリポジトリは個人的な目的で作成されたもので、他の環境での動作については一切責任を負いません。ご了承の上でご利用ください。)
+(このリポジトリは私個人のWebサイトで使用するために作成されたもので、他の環境での動作については一切責任を負いません。ご了承の上でご利用ください。)
 
-Releases から最新のバージョンをダウンロードして、その中の scripts ディレクトリ内のファイルをお好きな場所にコピーしてお使いください。
+Releases の最新のバージョンから igarin14pm-typescript-utils-vX.Y.Z.zip をダウンロード・展開し、その中のファイルをお好きな場所にコピーしてお使いください。
 
 # ライセンス
 
