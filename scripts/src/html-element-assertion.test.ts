@@ -3,7 +3,7 @@
 // https://opensource.org
 
 import { beforeAll, describe, expect, test } from 'vitest';
-import * as HTMLElementAssertion from '../../src/html-element-assertion';
+import * as HTMLElementAssertion from './html-element-assertion';
 
 describe('`InvalidHtmlElementError`', () => {
 

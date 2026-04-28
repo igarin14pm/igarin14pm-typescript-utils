@@ -3,7 +3,7 @@
 // https://opensource.org
 
 import { expect, test } from 'vitest';
-import * as TimersPromises from '../../src/timers-promises';
+import * as TimersPromises from './timers-promises';
 
 // `setTimeout()`
 
